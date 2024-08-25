@@ -18,5 +18,9 @@
                 "ms-toolsai.jupyter"
             ]
         }
-    }
+    },
+    "runArgs": [
+		"--name",
+		"${localEnv:USER}-devcontainer-EasyCRM"
+	]
 }
