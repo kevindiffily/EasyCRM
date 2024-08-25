@@ -23,5 +23,8 @@
     "runArgs": [
 		"--name",
 		"${localEnv:USER}-devcontainer-EasyCRM"
-	]
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    }
 }
