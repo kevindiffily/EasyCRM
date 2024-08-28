@@ -28,6 +28,6 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "mounts": [
-        "type=bind,source=/Users/${localEnv:USER}/.ssh,target=/root/.ssh,readonly"
+        "type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh,readonly"
     ]
 }
