@@ -21,10 +21,13 @@
         }
     },
     "runArgs": [
-		"--name",
-		"${localEnv:USER}-devcontainer-EasyCRM"
+        "--name",
+        "${localEnv:USER}-devcontainer-EasyCRM"
     ],
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    }
+    },
+    "mounts": [
+        "type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh,readonly"
+    ]
 }
